@@ -1,116 +1,29 @@
 ---
 id: welcome
 title: Tools
-sidebar_label: 🏠 Home
+sidebar_label: Home
+hide_table_of_contents: true
 ---
 
-import ContactUs from '@site/components/ContactUs.mdx';
+import {FeatureList, Column, Feature} from "@site/src/components/featurelist"
 
-Welcome! The NEAR ecosystem has a complete set of tools for you to make the most out of the NEAR network.
-In this page you will find:
+The NEAR ecosystem has a complete set of tools for you to make the most out of our network.
 
-1. [Wallets](https://www.mynearwallet.com/) to handle your assets.
-2. [Explorers](explorer.md) to quickly obtain information from the blockchain.
-3. Websites to simplify creating and participating on governance projects.
-4. Tools to query [past information](indexer4explorer.md) from the blockchain as well as [real time events](events.md).
-5. Developer tools to deploy and interact with contracts such as the [NEAR CLI](cli.md) and [NEAR JavaScript API](/tools/near-api-js/quick-reference).
-
-<hr class="subsection" />
-
-## Other Documentation Pages
-<div class="row">
-  <div class="col col--6">
-    <a href="https://near.org/use-cases">
-      <div class="card">
-        <div class="card__image">
-          <img src={require("@site/static/docs/assets/home/discover.png").default} alt="Discover" />
-        </div>
-        <div class="card__body">
-          <h4>Discover</h4>
-          <small>
-            Discover amazing apps in the Near ecosystem
-          </small>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="col col--6">
-    <a href="/concepts/welcome">
-      <div class="card">
-        <div class="card__image">
-          <img src={require("@site/static/docs/assets/home/learn.png").default} alt="Learn" />
-        </div>
-        <div class="card__body">
-          <h4>Learn</h4>
-          <small>
-            Learn how the NEAR blockchain works
-          </small>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="col col--6">
-    <a href="/develop/welcome">
-      <div class="card">
-        <div class="card__image">
-          <img src={require("@site/static/docs/assets/home/create.png").default} alt="Develop" />
-        </div>
-        <div class="card__body">
-          <h4>Develop</h4>
-          <small>
-            Find out how to develop your first smart contract from scratch!
-          </small>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="col col--6">
-    <a href="/tutorials/welcome">
-      <div class="card">
-        <div class="card__image">
-          <img src={require("@site/static/docs/assets/home/tutorials.png").default} alt="Tutorials" />
-        </div>
-        <div class="card__body">
-          <h4>Tutorials</h4>
-          <small>
-            Learn by following one of our multiple tutorials
-          </small>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="col col--6">
-    <a href="/api/rpc/introduction">
-      <div class="card">
-        <div class="card__image">
-          <img src={require("@site/static/docs/assets/home/rpc.png").default} alt="RPC" />
-        </div>
-        <div class="card__body">
-          <h4>RPC API</h4>
-          <small>
-            Interact with the NEAR RPC API
-          </small>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="col col--6">
-      <a href="/sdk/rust/introduction">
-        <div class="card">
-          <div class="card__image">
-            <img src={require("@site/static/docs/assets/home/sdk.png").default} alt="SDK Docs" />
-          </div>
-          <div class="card__body">
-            <h4>Rust SDK</h4>
-            <small>
-              The Rust SDK explained in depth for experienced developers
-            </small>
-          </div>
-        </div>
-      </a>
-    </div>
-</div>
-
-<hr class="subsection" />
-
-<ContactUs />
+<FeatureList>
+  <Column title="Essentials">
+    <Feature url="/tools/near-cli" title="NEAR CLI" subtitle="An all-in-one solution in your terminal" image="near-cli.png" />
+    <Feature url="/tools/near-api" title="NEAR API" subtitle="Interface with NEAR from JS, Rust and Python" image="quickstart.png" />
+    <Feature url="/tools/sdk" title="NEAR SDK" subtitle="The best way to create contracts" image="smartcontract.png" />
+    <Feature url="/tools/wallet-selector" title="Wallet Selector" subtitle="Integrate all wallets in your app" image="multiple.png" />
+  </Column>
+  <Column title="Data Tools">
+    <Feature url="/tools/explorer" title="Explorers" subtitle="Web apps to access on-chain data" image="update.png" />
+    <Feature url="/tools/ecosystem-apis/fastnear" title="Data APIs" subtitle="The simplest way to query on-chain data" image="experiment.png" />
+    <Feature url="/tools/indexing" title="Indexers" subtitle="Services to create your own data APIs" image="blocks.png" />
+  </Column>
+  <Column title="Ecosystem Tools">
+    <Feature url="https://near-faucet.io/" title="Testnet Faucet" subtitle="Get tokens for your testing accounts" image="transaction.png" />
+    <Feature url="https://dev.near.org/" title="Developer Portal" subtitle="Discover news, communities and more tools" image="tutorials.png" />
+    <Feature url="https://app.nearcatalog.xyz/" title="NEAR Catalog" subtitle="A catalog full of awesome NEAR apps" image="guest-book.png" />
+  </Column>
+</FeatureList>
